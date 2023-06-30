@@ -59,6 +59,10 @@
       background: #f86ee1;
     }
 
+     .discord:hover{
+      background: #7289da;
+    }
+
     .twitter:hover{
       background-color: #26a7de;
     }
@@ -73,6 +77,10 @@
 
     .pinterest:hover{
       background-color: #c8232c;
+    }
+
+    .whatsapp:hover{
+      background-color: #25D366;
     }
 
     .social {
@@ -104,7 +112,7 @@
       
       <!-- Start messages Icon -->
       <div id="messages" onclick="navigate(this.id)" class="fill messages">
-        <span class="icon messages"><i class="fa-solid fa-messages"></i></span>
+        <span class="icon"><i class="fa-solid fa-messages"></i></span>
       </div>
       <!-- End messages Icon -->
 
@@ -114,6 +122,13 @@
         <span class="icon"><i class="fa-brands fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
+
+
+      <!-- Start discord Icon -->
+      <div id="discord" onclick="navigate(this.id)" class="fill discord">
+        <span class="icon"><i class="fa-brands fa-discord"></i></span>
+      </div>
+      <!-- End discord Icon -->
       
 
       <!-- Start twitter Icon -->
@@ -143,8 +158,14 @@
       </div>
       <!-- End pinterest Icon -->
 
+      
+      <!-- Start whatsapp Icon -->
+      <div id="whatsapp" onclick="navigate(this.id)" class="fill whatsapp">
+        <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+      </div>
+      <!-- End whatsapp Icon -->
 
-
+      
     </div>
 
 
@@ -164,6 +185,9 @@
         else if (id === "instagram") {
           window.open("https://www.instagram.com/", '_blank').focus(); //Add the url to your instagram account
         }
+        else if (id === "discord") {
+          window.open("https://discord.com/channels/@me", '_blank').focus(); //Add the url to your discord account
+        }
         else if (id === "twitter") {
           window.open("https://twitter.com/home?lang=en", '_blank').focus(); //Add the url to your pinterest account
         }
@@ -175,6 +199,9 @@
         }
         else if (id === "pinterest") {
           window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "whatsapp") {
+          window.open("https://web.whatsapp.com/", '_blank').focus(); //Add the url to your pinterest account
         }
       }
 
