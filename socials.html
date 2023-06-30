@@ -51,6 +51,10 @@
       background-color: #23c8c8;
     }
 
+    .messages:hover{
+      background-color: #23c8c8;
+    }
+
     .instagram:hover{
       background: #f86ee1;
     }
@@ -96,6 +100,13 @@
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
       <!-- End email Icon -->
+
+      
+      <!-- Start messages Icon -->
+      <div id="messages" onclick="navigate(this.id)" class="fill messages">
+        <span class="icon messages"><i class="fa-solid fa-message"></i></span>
+      </div>
+      <!-- End messages Icon -->
 
       
       <!-- Start instagram Icon -->
@@ -146,6 +157,9 @@
 
         if (id === "email") {
           window.open("https://mail.google.com/mail/u/0/#inbox", '_blank').focus(); //Add your email after "mailto:""
+        }
+          else if (id === "messages") {
+          window.open("https://messages.google.com/web/authentication", '_blank').focus(); //Add the url to your messages account
         }
         else if (id === "instagram") {
           window.open("https://www.instagram.com/", '_blank').focus(); //Add the url to your instagram account
