@@ -63,10 +63,6 @@
       background: #7289da;
     }
 
-    .twitter:hover{
-      background-color: #26a7de;
-    }
-
     .reddit:hover{
       background-color: #ff4500;
     }
@@ -129,14 +125,7 @@
         <span class="icon"><i class="fa-brands fa-discord"></i></span>
       </div>
       <!-- End discord Icon -->
-      
-
-      <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="fill twitter">
-        <span class="icon"><i class="fa-brands fa-twitter"></i></span>
-      </div>
-      <!-- End twitter Icon -->
-
+    
 
       <!-- Start reddit Icon -->
       <div id="reddit" onclick="navigate(this.id)" class="fill reddit">
@@ -187,9 +176,6 @@
         }
         else if (id === "discord") {
           window.open("https://discord.com/channels/@me", '_blank').focus(); //Add the url to your discord account
-        }
-        else if (id === "twitter") {
-          window.open("https://twitter.com/home?lang=en", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "reddit") {
           window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
