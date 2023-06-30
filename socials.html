@@ -48,15 +48,15 @@
     }
 
     .email:hover{
-      background-color: #3e65cf;
+      background-color: #000000;
     }
 
     .messages:hover{
-      background-color: #4285F4;
+      background-color: #0057cb;
     }
 
     .instagram:hover{
-      background: #f86ee1;
+      background: #C13584;
     }
 
      .discord:hover{
@@ -112,7 +112,7 @@
       
       <!-- Start messages Icon -->
       <div id="messages" onclick="navigate(this.id)" class="fill messages">
-        <span class="icon"><i class="fa-solid fa-messages"></i></span>
+        <span class="icon"><i class="fa-solid fa-comments"></i></span>
       </div>
       <!-- End messages Icon -->
 
@@ -180,7 +180,7 @@
           window.open("https://mail.google.com/mail/u/0/#inbox", '_blank').focus(); //Add your email after "mailto:""
         }
           else if (id === "messages") {
-          window.open("https://messages.google.com/web/authentication", '_blank').focus(); //Add the url to your messages account
+          window.open("https://messages.google.com/web/conversations", '_blank').focus(); //Add the url to your messages account
         }
         else if (id === "instagram") {
           window.open("https://www.instagram.com/", '_blank').focus(); //Add the url to your instagram account
